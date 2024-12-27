@@ -1,12 +1,10 @@
-import tensorflow as tf
-from tensorflow.keras.models import load_model
-import pickle as pkl
-import pandas as pd
+import streamlit as st
 import numpy as np
-from sklearn.model_selection import train_test_split
+import tensorflow as tf
+import pickle as pikl
 from sklearn.preprocessing import StandardScaler,LabelEncoder,OneHotEncoder
 import pickle 
-import streamlit as st
+
 
 model = tf.keras.models.load_model('model.h5')
 
